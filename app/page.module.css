@@ -11,12 +11,19 @@
   width: 100vw;
 }
 
-/* .canvas {
-  background-attachment: fixed;
-  position: fixed;
-} */
-
 .header {
   position:absolute; left: 1em; top: 1em;
-  color: red
+  color: aliceblue
+}
+
+.main_button {
+  width: 300px;
+  margin: 5px 5%;
+  font-size: 1.5rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
