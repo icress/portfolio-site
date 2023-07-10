@@ -9,7 +9,5 @@ export default function Home() {
     <div className={styles.scene}>
       <BrainV2 />
     </div>
-    
-
   )
-}
+};
