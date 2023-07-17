@@ -12,8 +12,8 @@ describe('buttons', () => {
   });
 
   it('tests all buttons', () => {
-    cy.get('.page_container___c__5 > :nth-child(1)').wait(1000).click().click();
+    cy.get('.page_container___c__5 > :nth-child(1)x').wait(1000).click().click();
     cy.get('.page_container___c__5 > :nth-child(2)').wait(1000).click();
-    cy.get('.page_container___c__5 > :nth-child(1)').wait(1000).click().dblclick();
+    cy.get('.page_container___c__5 > :nth-child(1)').wait(1000).click().click();
   })
 });

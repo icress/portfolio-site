@@ -12,11 +12,11 @@
 }
 
 .header {
-  position:absolute; left: 1em; top: 1em;
+  position: relative;
   color: aliceblue
 }
 
-.main_button {
+.mainButton {
   width: 300px;
   margin: 5px 5%;
   font-size: 1.5rem;
@@ -26,4 +26,26 @@
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+.card {
+  align-items: center;
+  background: rgba(20, 20, 20, 0.66);
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  width: 300px;
+  position: relative;
+  border: 1px solid #fff;
+  backdrop-filter: blur(3px);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, 300px);
 }

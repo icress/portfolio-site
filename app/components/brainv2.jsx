@@ -1,4 +1,4 @@
-import styles from './page.module.css'
+import styles from '../page.module.css'
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas, extend } from '@react-three/fiber'
@@ -30,9 +30,9 @@ export default function BrainV2() {
     return (
         <div className={styles.canvasContainer}>
             <div className={styles.container}>
-                <button className={styles.main_button} onClick={rotateX45}>Rotate X 45</button>
-                <button className={styles.main_button} onClick={goToBack}>Go To Back</button>
-                <button className={styles.main_button} onClick={getCurrentValues}>Get Current Values</button>
+                <button className={styles.mainButton} onClick={rotateX45}>Rotate X 45</button>
+                <button className={styles.mainButton} onClick={goToBack}>Go To Back</button>
+                <button className={styles.mainButton} onClick={getCurrentValues}>Get Current Values</button>
             </div>
 
             <Canvas
@@ -45,9 +45,6 @@ export default function BrainV2() {
                     <Effects disableGamma>
                         <unrealBloomPass threshold={.5} strength={1.5} radius={0.5} />
                     </Effects>
-                    <>
-                    
-                    </>
                     <>
                         <primitive object={brain.scene} scale={.4} />
                     </>
