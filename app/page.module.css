@@ -20,12 +20,19 @@
   width: 300px;
   margin: 5px 5%;
   font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.container {
-  position: relative;
+.navbar {
+  position: sticky;
+  top: 0px;
   display: flex;
   justify-content: center;
+  z-index: 999;
+  padding: 15px;
+  background: linear-gradient(#545454, black);
 }
 
 .card {
@@ -48,4 +55,12 @@
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  margin: 3%;
+}
+
+.signature {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
 }

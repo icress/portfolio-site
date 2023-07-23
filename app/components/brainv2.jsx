@@ -13,27 +13,29 @@ extend({ UnrealBloomPass })
 export default function BrainV2() {
     const cameraControlRef = useRef(null);
 
-    function rotateX45() {
-        cameraControlRef.current?.rotate(Math.PI / 4, 0, true)
-    };
+    // function rotateX45() {
+    //     cameraControlRef.current?.rotate(Math.PI / 4, 0, true)
+    // };
 
-    function goToBack() {
-        cameraControlRef.current?.setPosition(4.949747468305833, 2.143131898507868e-16, 2.143131898507868e-16, true)
-    }
+    // function goToBack() {
+    //     cameraControlRef.current?.setPosition(4.949747468305833, 2.143131898507868e-16, 2.143131898507868e-16, true)
+    // }
 
-    function getCurrentValues() {
-        console.log(cameraControlRef.current._camera.position)
-    }
+    // function getCurrentValues() {
+    //     console.log(cameraControlRef.current._camera.position)
+    // }
 
     const brain = useLoader(GLTFLoader, './neuronet (BSDF).gltf')
 
     return (
+        
         <div className={styles.canvasContainer}>
-            <div className={styles.container}>
+
+            {/* <div className={styles.navbar}>
                 <button className={styles.mainButton} onClick={rotateX45}>Rotate X 45</button>
                 <button className={styles.mainButton} onClick={goToBack}>Go To Back</button>
                 <button className={styles.mainButton} onClick={getCurrentValues}>Get Current Values</button>
-            </div>
+            </div> */}
 
             <Canvas
                 className={styles.canvas}
