@@ -13,12 +13,15 @@
 
 .header {
   position: relative;
-  color: aliceblue
+  color: aliceblue;
+  text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 3.5rem;
+  margin: 5%;
+  text-align: center;
 }
 
 .mainButton {
-  width: 300px;
-  margin: 5px 5%;
+  margin: 0 5%;
   font-size: 1.5rem;
   background: none;
   border: none;
@@ -29,10 +32,21 @@
   position: sticky;
   top: 0px;
   display: flex;
-  justify-content: center;
   z-index: 999;
   padding: 15px;
   background: linear-gradient(#545454, black);
+}
+
+.navLeft {
+  float: left;
+}
+
+.navRight {
+  float: right;
+  width: 400px;
+  position:absolute;
+  right: 0;
+  margin-top: 10px;
 }
 
 .card {

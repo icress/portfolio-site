@@ -17,10 +17,15 @@ export default function Navbar() {
 
     return (
         <div className={styles.navbar}>
-            <img className={styles.signature} src='signature-white.svg' onClick='#'/>
-            <button className={styles.mainButton} onClick={rotateX45}>Rotate</button>
-            <button className={styles.mainButton} onClick={goToBack}>Go To Back</button>
-            <button className={styles.mainButton} onClick={getCurrentValues}>Values</button>
+            <div className={styles.navLeft}>
+                <img className={styles.signature} src='signature-white.svg' onClick='#' />
+            </div>
+
+            <div className={styles.navRight}>
+                <button className={styles.mainButton} onClick={rotateX45}>Rotate</button>
+                <button className={styles.mainButton} onClick={goToBack}>Go To Back</button>
+                <button className={styles.mainButton} onClick={getCurrentValues}>Values</button>
+            </div>
         </div>
     );
 };
