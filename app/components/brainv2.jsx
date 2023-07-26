@@ -25,7 +25,23 @@ export default function BrainV2() {
     //     console.log(cameraControlRef.current._camera.position)
     // }
 
-    const brain = useLoader(GLTFLoader, './neuronet (BSDF).gltf')
+    const brain = useLoader(GLTFLoader, './neuronet (BSDF).gltf');
+
+    const modelRef = useRef();
+
+    if (brain) {
+        brain.scene.traverse((material) => {
+            if (material) {
+
+                if (material.emmisive) {
+                    const emissiveColor = material.baseColorFactor.getHex();
+                    const emissiveIntensity = material.emissiveStrength;
+                    modelRef.current.add(emissiveColor, emissiveIntensity)
+                    console.log(emissiveColor, emissiveIntensity)
+                }
+            }
+        });
+    }
 
     return (
         
@@ -46,10 +62,10 @@ export default function BrainV2() {
                 <Suspense fallback={null}>
 
                     <Effects disableGamma>
-                        <unrealBloomPass threshold={.5} strength={1.5} radius={0.5} />
+                        {/* <unrealBloomPass threshold={.5} strength={1.5} radius={0.5} /> */}
                     </Effects>
                     <>
-                        <primitive object={brain.scene} scale={.4} />
+                        <primitive object={brain.scene} scale={.4} ref={modelRef}/>
                     </>
                 </Suspense>
             </Canvas>
