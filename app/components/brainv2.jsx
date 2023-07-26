@@ -41,7 +41,8 @@ export default function BrainV2() {
                 className={styles.canvas}
                 camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 3.5] }}>
                     
-                <CameraControls ref={cameraControlRef} />
+                <CameraControls ref={cameraControlRef} enabled={false}/>
+                <OrbitControls autoRotate={true} autoRotateSpeed={7} enableZoom={false}/>
                 <Suspense fallback={null}>
 
                     <Effects disableGamma>
