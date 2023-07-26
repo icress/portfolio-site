@@ -37,7 +37,6 @@ export default function BrainV2() {
                     const emissiveColor = material.baseColorFactor.getHex();
                     const emissiveIntensity = material.emissiveStrength;
                     modelRef.current.add(emissiveColor, emissiveIntensity)
-                    console.log(emissiveColor, emissiveIntensity)
                 }
             }
         });
