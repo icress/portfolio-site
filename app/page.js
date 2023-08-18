@@ -2,7 +2,7 @@
 
 import styles from './page.module.css';
 import * as THREE from 'three';
-import BrainV2 from './components/brainv2';
+import BrainCanvas from './components/brainv2';
 import Card from './components/card';
 import CardGrid from './components/cardGrid';
 import Navbar from './components/navbar';
@@ -16,15 +16,19 @@ export default function Home() {
   return (
     <div className={styles.scene}>
       <Navbar />
-      <BrainV2 />
+      <BrainCanvas />
       <div className={styles.content}>
+        
+          <img className={styles.profilePic} src='linkedin-photo.jpg' />
+        
         <div className={permMarker.className}>
           <h1 className={styles.header}>Hi, I'm Isaac</h1>
         </div>
-
         <CardGrid>
           <Card>
-            <h1>This is a test of the card</h1>
+            <h2><a href='#'></a>High Quality Nonsense</h2>
+            <p>Blog website for publishing my thoughts, opnions, or random musings</p>
+            <strong>Python, HTML, CSS, Jinja, Flask, Bootstrap, SQLite, SQLAlchemy</strong>
           </Card>
           <Card>
             <h1>This is a test of the card</h1>
@@ -53,7 +57,7 @@ export default function Home() {
         </CardGrid>
         <Footer />
       </div>
-      
+
     </div>
   )
 };
