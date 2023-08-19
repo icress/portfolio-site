@@ -24,6 +24,7 @@ export default function Home() {
         <div className={permMarker.className}>
           <h1 className={styles.header}>Hi, I'm Isaac</h1>
         </div>
+        <h3 className={styles.disclaimer}>P.S. This website is still a prototype. Completed version will be coming soon!</h3>
         <CardGrid>
           <Card>
             <h2 className={styles.cardHead}><a href='#'></a>High Quality Nonsense</h2>
