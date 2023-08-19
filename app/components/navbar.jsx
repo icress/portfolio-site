@@ -21,11 +21,11 @@ export default function Navbar() {
                 <img className={styles.signature} src='signature-white.svg' onClick='#' />
             </div>
 
-            <div className={styles.navRight}>
+            {/* <div className={styles.navRight}>
                 <button className={styles.mainButton} onClick={rotateX45}>Rotate</button>
                 <button className={styles.mainButton} onClick={goToBack}>Go To Back</button>
                 <button className={styles.mainButton} onClick={getCurrentValues}>Values</button>
-            </div>
+            </div> */}
         </div>
     );
 };

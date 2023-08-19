@@ -26,8 +26,8 @@ export default function Home() {
         </div>
         <CardGrid>
           <Card>
-            <h2><a href='#'></a>High Quality Nonsense</h2>
-            <p>Blog website for publishing my thoughts, opnions, or random musings</p>
+            <h2 className={styles.cardHead}><a href='#'></a>High Quality Nonsense</h2>
+            <p className={styles.cardContent}>Blog website for publishing my thoughts, opnions, or random musings</p>
             <strong>Python, HTML, CSS, Jinja, Flask, Bootstrap, SQLite, SQLAlchemy</strong>
           </Card>
           <Card>

@@ -13,7 +13,6 @@ import { Bloom } from '@react-three/postprocessing'
 
 extend({ UnrealBloomPass, RenderPass, EffectComposer })
 
-// export default function BrainV2() {
 //     const cameraControlRef = useRef(null);
 
 // function rotateX45() {
@@ -27,55 +26,6 @@ extend({ UnrealBloomPass, RenderPass, EffectComposer })
 // function getCurrentValues() {
 //     console.log(cameraControlRef.current._camera.position
 
-//     const brain = useLoader(GLTFLoader, './neuronet (bin).gltf');
-
-//     const modelRef = useRef();
-
-//     if (brain) {
-//         brain.scene.traverse((material) => {
-//             if (material) {
-
-//                 if (material.emmisive) {
-//                     const emissiveColor = material.baseColorFactor.getHex();
-//                     const emissiveIntensity = material.emissiveStrength;
-//                     modelRef.current.add(emissiveColor, emissiveIntensity)
-//                 }
-//             }
-//         });
-//     }
-
-//     return (
-
-//         <div className={styles.canvasContainer}>
-
-//             {/* <div className={styles.navbar}>
-//                 <button className={styles.mainButton} onClick={rotateX45}>Rotate X 45</button>
-//                 <button className={styles.mainButton} onClick={goToBack}>Go To Back</button>
-//                 <button className={styles.mainButton} onClick={getCurrentValues}>Get Current Values</button>
-//             </div> */}
-
-//             <Canvas
-//                 className={styles.canvas}
-//                 camera={{ position: [0, 0, 3.5] }}>
-
-//                 <CameraControls ref={cameraControlRef} enabled={false} />
-//                 <OrbitControls autoRotate={true} autoRotateSpeed={7} enableZoom={false} />
-//                 <Suspense fallback={'Loading...'}>
-//                     <Effects disableGamma>
-//                         <unrealBloomPass
-//                             threshold={.5}
-//                             strength={1.5}
-//                             radius={0.5}
-//                         />
-//                     </Effects>
-//                     <>
-//                         <primitive object={brain.scene} scale={.4} ref={modelRef} />
-//                     </>
-//                 </Suspense>
-//             </Canvas>
-//         </div>
-//     );
-// };
 
 const Brain = () => {
     const brain = useLoader(GLTFLoader, 'neuronet (bin).gltf');
