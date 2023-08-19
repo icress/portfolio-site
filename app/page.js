@@ -27,7 +27,7 @@ export default function Home() {
         <h3 className={styles.disclaimer}>P.S. This website is still a prototype. Completed version will be coming soon!</h3>
         <CardGrid>
           <Card>
-            <h2 className={styles.cardHead}><a href='#'></a>High Quality Nonsense</h2>
+            <h2 className={styles.cardHead}><a href='https://highqualitynonsense.onrender.com/'></a>High Quality Nonsense</h2>
             <p className={styles.cardContent}>Blog website for publishing my thoughts, opnions, or random musings</p>
             <strong>Python, HTML, CSS, Jinja, Flask, Bootstrap, SQLite, SQLAlchemy</strong>
           </Card>
