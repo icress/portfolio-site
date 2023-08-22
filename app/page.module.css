@@ -12,6 +12,10 @@
   max-width: 100%;
 }
 
+.content {
+  position: relative;
+}
+
 .header {
   position: relative;
   color: aliceblue;
