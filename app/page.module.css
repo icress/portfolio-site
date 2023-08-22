@@ -21,6 +21,12 @@
   text-align: center;
 }
 
+.subheader {
+  position: relative;
+  margin: 5% 10%;
+  font-size: 3rem;
+}
+
 .disclaimer {
   text-align: center;
 }
@@ -85,6 +91,10 @@
 
 .cardContent {
   margin: 5px 0;
+}
+
+.cardLink:hover {
+  color: #007bff;
 }
 
 .cardGrid {
