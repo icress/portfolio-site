@@ -18,13 +18,25 @@ export default function Home() {
       <Navbar />
       <BrainCanvas />
       <div className={styles.content}>
-        
-          <img className={styles.profilePic} src='linkedin-photo.jpg' />
-        
-        <div className={permMarker.className}>
-          <h1 className={styles.header}>Hi, I'm Isaac</h1>
+
+        <div className={styles.titleContainer}>
+          <div className={permMarker.className}>
+            <h1 className={styles.header}>Hi, I'm Isaac</h1>
+          </div>
+          <h2 className={styles.disclaimer}>I am a software engineer, neuroscientist, and lifelong learner</h2>
+
+          <h3 className={styles.disclaimer}>P.S. This website is still a prototype. Completed version will be coming soon!</h3>
         </div>
-        <h3 className={styles.disclaimer}>P.S. This website is still a prototype. Completed version will be coming soon!</h3>
+
+        <h2 className={styles.subheader}>A bit about me...</h2>
+        <div className={styles.gridPattern}>
+          <img className={styles.profilePic} src='linkedin-photo.jpg' />
+
+          <div className={styles.textContainer}>
+            <p>I'm a motivated neuroscientist turned software engineer. I love tackling interesting problems and applying creative solutions. Some of my many interests include reading, writing, traveling, skiing, and camping. I am an extremely driven person who constantly stives to learn something new.</p>
+          </div>
+        </div>
+
         <h2 className={styles.subheader}>Projects</h2>
         <CardGrid>
           <Card>

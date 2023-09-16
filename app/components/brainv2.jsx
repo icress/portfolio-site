@@ -53,7 +53,7 @@ const BrainCanvas = () => {
 
             <Canvas
                 className={styles.canvas}
-                camera={{ position: [0, 0, 3.5] }}>
+                camera={{ position: [0, 0.5, 3.5] }}>
 
                 <CameraControls enabled={false} />
                 <OrbitControls autoRotate={true} autoRotateSpeed={7} enableZoom={false} />
