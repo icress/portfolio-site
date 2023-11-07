@@ -8,6 +8,7 @@ import CardGrid from './components/cardGrid';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import { Permanent_Marker } from 'next/font/google';
+import { motion, MotionConfig } from 'framer-motion'
 
 const permMarker = Permanent_Marker({ subsets: ['latin'], weight: '400' });
 
@@ -17,6 +18,7 @@ export default function Home() {
     <div className={styles.scene}>
       <Navbar />
       <BrainCanvas />
+
       <div className={styles.content}>
 
         <div className={styles.titleContainer}>
@@ -28,18 +30,28 @@ export default function Home() {
           <h3 className={styles.disclaimer}>P.S. This website is still a prototype. Completed version will be coming soon!</h3>
         </div>
 
-        <h2 className={styles.subheader}>A bit about me...</h2>
-        <div className={styles.gridPattern}>
-          <img className={styles.profilePic} src='linkedin-photo.jpg' />
+        <MotionConfig
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: .7 }}
+          viewport={{ amount: .8 }}>
+            {/* Possible bug with Framer motion: initial opacity not passed to children */}
+          <motion.h2 initial={{opacity: 0}} className={styles.subheader}>A bit about me...</motion.h2>
+          <motion.div initial={{opacity: 0}} className={styles.gridPattern}>
+            <img
+              dura className={styles.profilePic} src='linkedin-photo.jpg' />
 
-          <div className={styles.textContainer}>
-            <p>I'm a motivated neuroscientist turned software engineer. I love tackling interesting problems and applying creative solutions. Some of my many interests include reading, writing, traveling, skiing, and camping. I am an extremely driven person who constantly stives to learn something new.</p>
-          </div>
-        </div>
+            <div className={styles.textContainer}>
+              <p>I'm a motivated neuroscientist turned software engineer. I love tackling interesting problems and applying creative solutions. Some of my many interests include reading, writing, traveling, skiing, and camping. I am an extremely driven person who constantly stives to learn something new.</p>
+            </div>
+          </motion.div>
+        </MotionConfig>
+
+
 
         <h2 className={styles.subheader}>Projects</h2>
         <CardGrid>
-          <Card>
+            <Card>
             <h2 className={styles.cardHead}><a className={styles.cardLink} href='https://highqualitynonsense.onrender.com/'>High Quality Nonsense</a></h2>
             <p className={styles.cardContent}>Blog website for publishing my thoughts, opnions, or random musings</p>
             <strong>Python, HTML, CSS, Jinja, Flask, Bootstrap, SQLite, SQLAlchemy</strong>
@@ -64,11 +76,11 @@ export default function Home() {
             <h2 className={styles.cardHead}><a className={styles.cardLink} href='https://icress.github.io/scorekeeper/'>Scorekeeper</a></h2>
             <p className={styles.cardContent}>Web app used for tracking scores</p>
             <strong>JavaScript, HTML, CSS, Bulma</strong>
-          </Card>
+          </Card>          
         </CardGrid>
         <Footer />
       </div>
 
-    </div>
+    </div >
   )
 };
