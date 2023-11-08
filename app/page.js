@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import BrainCanvas from './components/brainv2';
 import Navbar from './components/navbar';
 import Projects from './components/projects';
+import Skills from './components/skills';
 import Footer from './components/footer';
 import { WorkExperience, workExperiences } from './components/workExperience';
 import { Permanent_Marker } from 'next/font/google';
@@ -49,6 +50,8 @@ export default function Home() {
             </motion.div>
           </div>
         </MotionConfig>
+
+        <Skills />
 
         {/* <div className='workContainer'>
           {workExperiences.map((experience, index) => (

@@ -101,6 +101,34 @@
   text-align: center;
 }
 
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes reverse-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slideshow {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slide {
+  display: inline-block;
+  animation: 5s scroll infinite linear;
+}
 
 .card {
   align-items: center;
@@ -175,5 +203,11 @@
   margin-right: 5px;
   font-size: 1.2rem;
   box-shadow: 3px 0 5px #000, 0 -1px 5px #000, 0 1px 5px #000, -1px 0 5px #000;
-  ;
 }
+
+.bigIcon {
+  font-size: 3rem;
+  margin: 35px;
+  box-shadow: 3px 0 5px #000, 0 -1px 5px #000, 0 1px 5px #000, -1px 0 5px #000;
+}
+
