@@ -101,7 +101,7 @@
   text-align: center;
 }
 
-@keyframes scroll {
+@keyframes text-scroll {
   from {
     transform: translateX(0%);
   }
@@ -127,9 +127,46 @@
   justify-content: flex-start;
 }
 
+.textSlideshow {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .slide {
   display: inline-block;
   animation: 30s reverse-scroll infinite linear;
+}
+
+.textSlide {
+  display: flex;
+  animation: 30s text-scroll infinite linear;
+}
+
+.skillDiv {
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+
+.skillDiv h3 {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.laptopScreen {
+  background: rgba(20, 20, 20, 0.66);
+  backdrop-filter: blur(3px);
+  margin: 0 25vw;
+  text-align: center;
+  width: 44vw;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  height: 27.5vw;
+  padding-top: 3%;
 }
 
 .card {
@@ -210,6 +247,8 @@
 .bigIcon {
   font-size: 3rem;
   margin: 35px;
-  box-shadow: 3px 0 5px #000, 0 -1px 5px #000, 0 1px 5px #000, -1px 0 5px #000;
 }
 
+.giantIcon {
+  font-size: 70vw;
+}
