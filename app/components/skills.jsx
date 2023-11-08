@@ -1,6 +1,7 @@
 import { SiFlask, SiJavascript, SiMongodb, SiExpress, SiPostman, SiJest, SiCypress } from 'react-icons/si';
 import { FaReact, FaHtml5, FaCss3, FaPython, FaNodeJs } from 'react-icons/fa';
 import { BsFiletypeSql } from 'react-icons/bs';
+import { TbBrandThreejs } from 'react-icons/tb'
 import styles from '../page.module.css';
 
 export default function Skills() {
@@ -11,10 +12,10 @@ export default function Skills() {
                 <div className={styles.slide}>
                     <FaPython className={styles.bigIcon} />
                     <SiJavascript className={styles.bigIcon} />
-                    <FaNodeJs className={styles.bigIcon} />
                     <SiFlask className={styles.bigIcon} />
                     <FaReact className={styles.bigIcon} />
                     <SiExpress className={styles.bigIcon} />
+                    <FaNodeJs className={styles.bigIcon} />
                     <FaHtml5 className={styles.bigIcon} />
                     <FaCss3 className={styles.bigIcon} />
                     <SiMongodb className={styles.bigIcon} />
@@ -22,14 +23,15 @@ export default function Skills() {
                     <SiPostman className={styles.bigIcon} />
                     <SiJest className={styles.bigIcon} />
                     <SiCypress className={styles.bigIcon} />
+                    <TbBrandThreejs className={styles.bigIcon} />
                 </div>
                 <div className={styles.slide}>
                     <FaPython className={styles.bigIcon} />
                     <SiJavascript className={styles.bigIcon} />
-                    <FaNodeJs className={styles.bigIcon} />
                     <SiFlask className={styles.bigIcon} />
                     <FaReact className={styles.bigIcon} />
                     <SiExpress className={styles.bigIcon} />
+                    <FaNodeJs className={styles.bigIcon} />
                     <FaHtml5 className={styles.bigIcon} />
                     <FaCss3 className={styles.bigIcon} />
                     <SiMongodb className={styles.bigIcon} />
@@ -37,6 +39,7 @@ export default function Skills() {
                     <SiPostman className={styles.bigIcon} />
                     <SiJest className={styles.bigIcon} />
                     <SiCypress className={styles.bigIcon} />
+                    <TbBrandThreejs className={styles.bigIcon} />
                 </div>
             </div>
         </>
