@@ -71,6 +71,9 @@ export default function Skills() {
                 </div>
             </div>
         </div>
+        <div className={styles.textContainer}>
+                <p>I have focused mostly on full stack web development, which has led me to be proficient in a variety of frontend and backend technologies. Whether it's a frontend library or a backend database, I can get the job done. If I don't know it yet, I have a proven track record of learning fast and accomplishing tasks.</p>
+            </div>
     </>
 
     const laptop = <>
@@ -85,21 +88,25 @@ export default function Skills() {
                     {skillTextSlide}
                     {skillTextSlide}
                 </div>
+                <div className={styles.laptopText}>
+                <p>I have focused mostly on full stack web development, which has led me to be proficient in a variety of frontend and backend technologies. Whether it's a frontend library or a backend database, I can get the job done. If I don't know it yet, I have a proven track record of learning fast and accomplishing tasks.</p>
+            </div>
             </div>
         </div>
     </>
 
-    let smallScreen = useMediaQuery({query: '(max-width: 900px)'})
+    let smallScreen = useMediaQuery({ query: '(max-width: 900px)' })
     const [device, setDevice] = useState(laptop)
 
     useEffect(() => {
-     if (smallScreen) {
-        setDevice(phone)
-    }
-    else {
-        setDevice(laptop)
-    }}, [smallScreen])
-    
+        if (smallScreen) {
+            setDevice(phone)
+        }
+        else {
+            setDevice(laptop)
+        }
+    }, [smallScreen])
+
 
     return (
         <>
