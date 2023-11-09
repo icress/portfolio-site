@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className={styles.scene}>
       <Navbar />
-      {/* <BrainCanvas /> */}
+      <BrainCanvas />
 
       <div className={styles.content}>
 

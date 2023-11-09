@@ -76,6 +76,7 @@ export default function Skills() {
             </div>
     </>
 
+// Make laptop and screen sticky?
     const laptop = <>
         <div className={styles.skillDiv}>
             <AiOutlineLaptop className={styles.laptopIcon} />
