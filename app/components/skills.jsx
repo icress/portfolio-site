@@ -110,11 +110,11 @@ export default function Skills() {
 
 
     return (
-        <>
+        <section>
             <h2 className={styles.subheader}>Tech Skills</h2>
 
             {device}
 
-        </>
+        </section>
     )
 }

@@ -5,7 +5,7 @@ import styles from '../page.module.css';
 
 export default function Projects() {
     return (
-        <>
+        <section>
         <h2 className={styles.subheader}>Projects</h2>
         <CardGrid>
         <Card>
@@ -44,6 +44,6 @@ export default function Projects() {
             <strong>JavaScript, HTML, CSS, Bulma</strong>
           </Card>
         </CardGrid>
-        </>
+        </section>
     )
 }

@@ -4,7 +4,7 @@ import BoxGrid from './boxGrid';
 
 export default function CoreValues() {
     return (
-        <>
+        <section>
             <h2 className={styles.subheader}>Core Values</h2>
             <BoxGrid>
                 <Box image='https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
@@ -17,7 +17,7 @@ export default function CoreValues() {
                     <h3>Balance</h3>
                 </Box>
             </BoxGrid>
-        </>
+        </section>
 
     )
 }

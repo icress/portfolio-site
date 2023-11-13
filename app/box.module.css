@@ -10,6 +10,7 @@
     align-items: flex-start;
     text-align: center;
     background-position: center;
+    margin-bottom: 30px;
 }
 
 .box h3 {
@@ -17,10 +18,17 @@
     margin-top: 30px;
 }
 
-.boxGrid {
+/* .boxGrid {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
     margin: 10% 3%;
+  } */
+
+  .boxGrid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
   }
