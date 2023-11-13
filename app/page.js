@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import BrainCanvas from './components/brainv2';
 import Navbar from './components/navbar';
 import Projects from './components/projects';
+import CoreValues from './components/coreValues';
 import Skills from './components/skills';
 import Footer from './components/footer';
 import ParticleBackground from './components/particles';
@@ -52,7 +53,7 @@ export default function Home() {
             </motion.div>
           </div>
         </MotionConfig>
-
+        <CoreValues />
         <Skills />
 
         {/* <div className='workContainer'>
@@ -72,3 +73,12 @@ export default function Home() {
     </div >
   )
 };
+
+/* 
+TODO list:
+
+1) Separate CSS into separate files for each component
+2) Make box component for core values
+3) Decide on what to do for background color and navbar
+4) Add wavy styles for footer
+*/

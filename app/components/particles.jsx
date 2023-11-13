@@ -1,4 +1,3 @@
-import styles from '../particles.module.css';
 import Particles from 'react-tsparticles';
 import particleConfig from './particleConfig';
 import { useCallback } from 'react';
