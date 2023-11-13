@@ -52,11 +52,12 @@ const BrainCanvas = () => {
             </div> */}
 
             <Canvas
+                onCreated={state => state.gl.setClearAlpha(0)}
                 className={styles.canvas}
                 camera={{ position: [0, 0.5, 3.5] }}>
 
                 <CameraControls enabled={false} />
-                <OrbitControls autoRotate={true} autoRotateSpeed={7} enableZoom={false} />
+                <OrbitControls autoRotate={false} autoRotateSpeed={7} enableZoom={false} />
                 <Suspense fallback={'Loading...'}>
                     <Effects disableGamma>
                         <unrealBloomPass

@@ -7,6 +7,7 @@ import Navbar from './components/navbar';
 import Projects from './components/projects';
 import Skills from './components/skills';
 import Footer from './components/footer';
+import ParticleBackground from './components/particles';
 import { WorkExperience, workExperiences } from './components/workExperience';
 import { Permanent_Marker } from 'next/font/google';
 import { motion, MotionConfig } from 'framer-motion';
@@ -18,7 +19,8 @@ export default function Home() {
   return (
     <div className={styles.scene}>
       <Navbar />
-      <BrainCanvas />
+      <ParticleBackground />
+      {/* <BrainCanvas /> */}
 
       <div className={styles.content}>
 

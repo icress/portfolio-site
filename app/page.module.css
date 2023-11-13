@@ -82,6 +82,7 @@
   margin: 5% auto;
   display: flex;
   position: relative;
+  rotate: -5deg;
 }
 
 .textContainer {
@@ -248,7 +249,7 @@
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
-  margin: 3%;
+  margin: 10% 3%;
 }
 
 .signature {

@@ -1,0 +1,22 @@
+import styles from '../particles.module.css';
+import Particles from 'react-tsparticles';
+import particleConfig from './particleConfig';
+import { useCallback } from 'react';
+import { loadSlim } from 'tsparticles-slim';
+
+export default function ParticleBackground() {
+
+    const initParticles = useCallback(async (engine) => {
+        console.log(engine)
+        await loadSlim(engine)
+    }, []) 
+
+    const particlesLoaded = useCallback(async (container) => {
+        await console.log(container)
+    })
+    return (
+        <Particles init={initParticles} loaded={particlesLoaded} options={particleConfig}>
+
+        </Particles>
+    )
+}
