@@ -11,6 +11,7 @@
     text-align: center;
     background-position: center;
     margin-bottom: 30px;
+    transform-style: preserve-3d;
 }
 
 .box h3 {
@@ -24,4 +25,22 @@
     align-content: center;
     justify-content: space-evenly;
     margin-bottom: 70px;
+}
+
+.flipBoxFront, 
+.flipBoxBack {
+    position: absolute;
+    backface-visibility: hidden;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-position: center;
+}
+
+.flipBoxBack {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
