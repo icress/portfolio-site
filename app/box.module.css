@@ -12,6 +12,7 @@
     background-position: center;
     margin-bottom: 30px;
     transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 .box h3 {

@@ -10,12 +10,15 @@ export default function Box({ children, image, front, back }) {
     }
 
     return (
-        <div className={styles.flipBox} onClick={handleFlip}>
+        <motion.div 
+        whileHover={{ scale: 1.1 }} 
+        transition={{duration: 0.3}}
+        className={styles.flipBox} 
+        onClick={handleFlip}>
             <motion.div
-                whileHover={{ scale: 1.1 }}
                 className={styles.box}
                 animate={{rotateY: isFlipped ? 180 : 360}}
-                transition={{duration: 1.2}}>
+                transition={{duration: 0.7}}>
                     <div 
                     className={styles.flipBoxFront}
                     style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(${image})` }}>
@@ -26,7 +29,7 @@ export default function Box({ children, image, front, back }) {
                     </div>
 
             </motion.div>
-        </div>
+        </motion.div>
 
     );
 };
