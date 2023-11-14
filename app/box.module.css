@@ -18,18 +18,10 @@
     margin-top: 30px;
 }
 
-/* .boxGrid {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, 250px);
-    justify-content: center;
-    margin: 10% 3%;
-  } */
-
-  .boxGrid {
+.boxGrid {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
     margin-bottom: 70px;
-  }
+}

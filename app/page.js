@@ -55,6 +55,7 @@ export default function Home() {
         </section>
         <hr />
 
+        <h2 className={styles.subheader}>Core Values</h2>
         <CoreValues />
         <hr />
 

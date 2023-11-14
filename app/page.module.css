@@ -234,6 +234,8 @@
   backdrop-filter: blur(3px);
   padding: 10px;
   border-radius: 10px;
+  max-width: 250px;
+  margin-bottom: 30px;
 }
 
 .cardContent {
@@ -245,11 +247,11 @@
 }
 
 .cardGrid {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, 300px);
-  justify-content: center;
-  margin: 10% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
 }
 
 .signature {
