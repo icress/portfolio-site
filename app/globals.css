@@ -115,6 +115,9 @@ h3 {
   }
 }
 
-section {
-  margin-bottom: 80px;
+hr {
+  color: aliceblue;
+  width: 60vw;
+  max-width: 500px;
+  margin: 30px auto 80px;
 }

@@ -1,6 +1,7 @@
 import styles from '../page.module.css';
 import Box from './box';
 import BoxGrid from './boxGrid';
+import { motion } from 'framer-motion'
 
 export default function CoreValues() {
     return (

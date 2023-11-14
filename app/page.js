@@ -1,8 +1,6 @@
 'use client'
 
 import styles from './page.module.css';
-import * as THREE from 'three';
-import BrainCanvas from './components/brainv2';
 import Navbar from './components/navbar';
 import Projects from './components/projects';
 import CoreValues from './components/coreValues';
@@ -21,7 +19,6 @@ export default function Home() {
     <div className={styles.scene}>
       <Navbar />
       <ParticleBackground />
-      {/* <BrainCanvas /> */}
 
       <div className={styles.content}>
 
@@ -33,6 +30,7 @@ export default function Home() {
 
           <h3 className={styles.disclaimer}>P.S. This website is still a prototype. Completed version will be coming soon!</h3>
         </section>
+        <hr />
 
         <section>
           <MotionConfig
@@ -55,9 +53,13 @@ export default function Home() {
             </div>
           </MotionConfig>
         </section>
-        
+        <hr />
+
         <CoreValues />
+        <hr />
+
         <Skills />
+        <hr />
 
         {/* <div className='workContainer'>
           {workExperiences.map((experience, index) => (
@@ -70,6 +72,7 @@ export default function Home() {
         </div> */}
 
         <Projects />
+
         <Footer />
       </div>
 
@@ -81,7 +84,7 @@ export default function Home() {
 TODO list:
 
 1) Separate CSS into separate files for each component
-2) Make box component for core values
+2) Make animation for additional info for core values
 3) Decide on what to do for background color and navbar
 4) Add wavy styles for footer
 */

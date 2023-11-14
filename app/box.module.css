@@ -14,7 +14,7 @@
 }
 
 .box h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-top: 30px;
 }
 
@@ -31,4 +31,5 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+    margin-bottom: 70px;
   }
