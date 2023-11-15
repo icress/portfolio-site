@@ -27,8 +27,6 @@ export default function Home() {
             <h1 className={styles.header}>Hi, I'm Isaac</h1>
           </div>
           <h2 className={styles.disclaimer}>I am a software engineer, neuroscientist, and lifelong learner</h2>
-
-          <h3 className={styles.disclaimer}>P.S. This website is still a prototype. Completed version will be coming soon!</h3>
         </section>
         <hr />
 
