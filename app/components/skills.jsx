@@ -96,7 +96,7 @@ export default function Skills() {
         </div>
     </>
 
-    let smallScreen = useMediaQuery({ query: '(max-width: 900px)' })
+    let smallScreen = useMediaQuery({ query: '(max-width: 650px)' })
     const [device, setDevice] = useState(laptop)
 
     useEffect(() => {
