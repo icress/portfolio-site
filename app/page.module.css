@@ -77,6 +77,7 @@
 
 .profilePic {
   height: 40vh;
+  min-height: 270px;
   width: auto;
   box-shadow: 3px 0 5px #000, 0 -1px 5px #000, 0 1px 5px #000, -1px 0 5px #000;
   margin: 5% auto;
