@@ -84,7 +84,7 @@ export default function Home() {
 TODO list:
 
 1) Separate CSS into separate files for each component
-2) Make animation for additional info for core values
-3) Decide on what to do for background color and navbar
-4) Add wavy styles for footer
+2) Decide on what to do for background color and navbar
+3) Fix phone landscape view
+  *Profile pic size
 */
