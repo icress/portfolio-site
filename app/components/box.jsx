@@ -2,7 +2,7 @@ import styles from '../box.module.css';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-export default function Box({ children, image, front, back }) {
+export default function Box({ children, image, front, back, gradient }) {
     const [isFlipped, setIsFlipped] = useState(false)
 
     const handleFlip = () => {
@@ -24,7 +24,9 @@ export default function Box({ children, image, front, back }) {
                     style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(${image})` }}>
                         <h3>{front}</h3>
                     </div>
-                    <div className={styles.flipBoxBack}>
+                    <div 
+                    className={styles.flipBoxBack}
+                    style={{background: gradient}}>
                         <p>{back}</p>
                     </div>
 
