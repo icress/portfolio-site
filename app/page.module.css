@@ -251,7 +251,7 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
-  margin-bottom: 70px;
+  padding-bottom: 180px;
 }
 
 .signature {
@@ -266,16 +266,19 @@
   position: relative;
   bottom: 0;
   width: 100%;
+  background: #fefefe;
 }
 
 .footerContent {
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 3px 0 5px #000, 0 -1px 5px #000, 0 1px 5px #000, -1px 0 5px #000;
+  color: black;
+  text-shadow: none;
 }
 
 .footerLinks {
   margin: 10px;
+  font-weight: bold;
 }
 
 .footerLinks a {
@@ -291,8 +294,7 @@
 
 .icon {
   margin-right: 5px;
-  font-size: 1.2rem;
-  box-shadow: 3px 0 5px #000, 0 -1px 5px #000, 0 1px 5px #000, -1px 0 5px #000;
+  font-size: 1.5rem;
 }
 
 .bigIcon {
@@ -322,4 +324,35 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+}
+
+
+.customShapeDividerBottom1700073436 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.customShapeDividerBottom1700073436 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 165px;
+  transform: rotateY(180deg);
+}
+
+.customShapeDividerBottom1700073436 .shapeFill {
+  fill: #FEFEFE;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .customShapeDividerBottom1700073436 svg {
+      width: calc(100% + 1.3px);
+      height: 106px;
+  }
 }
