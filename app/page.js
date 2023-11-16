@@ -58,7 +58,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 className={styles.textContainer}
                 viewport={{ amount: .5, once: true }}>
-                <p>I'm a motivated neuroscientist turned software engineer. I love tackling interesting problems and applying creative solutions. Some of my many interests include reading, writing, traveling, skiing, and camping. I am an extremely driven person who constantly strives to learn something new.</p>
+                <p className={styles.blurb}>I'm a motivated neuroscientist turned software engineer. My current software specialty is <b>full stack web development.</b> I love tackling interesting problems and applying creative solutions. I am an extremely driven person who is constantly striving to learn something new.</p>
               </motion.div>
             </div>
           </MotionConfig>
@@ -110,7 +110,4 @@ TODO list:
 
 1) Separate CSS into separate files for each component
 2) Decide on what to do for background color and navbar
-3) Fix phone landscape view
-  *Profile pic size
-4) List of tech skills
 */
