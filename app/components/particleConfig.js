@@ -61,7 +61,7 @@ const particleConfig = {
         random: false,
         straight: false,
         out_mode: "out",
-        bounce: true,
+        bounce: false,
         attract: {
           enable: false,
           rotateX: 600,

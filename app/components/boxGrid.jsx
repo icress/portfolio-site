@@ -1,4 +1,4 @@
-import styles from '../box.module.css';
+import styles from './box.module.css';
 
 export default function BoxGrid({children}) {
     return (

@@ -6,7 +6,7 @@ import { AiOutlineLaptop } from 'react-icons/ai';
 import { GiSmartphone } from 'react-icons/gi';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from 'react';
-import styles from '../skills.module.css';
+import styles from './skills.module.css';
 
 export default function Skills() {
     const iconSlide = <div className={styles.slide}>

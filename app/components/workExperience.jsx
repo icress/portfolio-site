@@ -1,4 +1,4 @@
-import styles from '../work.module.css'
+import styles from './work.module.css'
 import {motion, MotionConfig} from 'framer-motion'
 
 export const workExperiences = [
