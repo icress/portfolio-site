@@ -48,28 +48,6 @@
   cursor: pointer;
 }
 
-.navbar {
-  position: sticky;
-  top: 0px;
-  display: flex;
-  z-index: 999;
-  padding: 15px;
-  background: linear-gradient(#545454, black);
-  width: 100vw;
-}
-
-.navLeft {
-  float: left;
-}
-
-.navRight {
-  float: right;
-  width: 400px;
-  position: absolute;
-  right: 0;
-  margin-top: 10px;
-}
-
 .gridPattern {
   display: flex;
   flex-wrap: wrap;
@@ -139,49 +117,6 @@
   align-content: center;
   justify-content: space-evenly;
   padding-bottom: 180px;
-}
-
-.signature {
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.footer {
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background: #fefefe;
-}
-
-.footerContent {
-  max-width: 800px;
-  margin: 0 auto;
-  color: black;
-  text-shadow: none;
-}
-
-.footerLinks {
-  margin: 10px;
-  font-weight: bold;
-}
-
-.footerLinks a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.footerLinks a:hover {
-  color: #007bff;
-  /* Change the color on hover to your preferred color */
-}
-
-.icon {
-  margin-right: 5px;
-  font-size: 1.5rem;
 }
 
 .customShapeDividerBottom1700073436 {

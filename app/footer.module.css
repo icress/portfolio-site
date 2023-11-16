@@ -1,0 +1,36 @@
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #fefefe;
+  }
+  
+  .footerContent {
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+    text-shadow: none;
+  }
+  
+  .footerLinks {
+    margin: 10px;
+    font-weight: bold;
+  }
+  
+  .footerLinks a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .footerLinks a:hover {
+    color: #007bff;
+    /* Change the color on hover to your preferred color */
+  }
+  
+  .icon {
+    margin-right: 5px;
+    font-size: 1.5rem;
+  }
