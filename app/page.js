@@ -13,7 +13,6 @@ import { motion, MotionConfig } from 'framer-motion';
 
 const permMarker = Permanent_Marker({ subsets: ['latin'], weight: '400' });
 
-
 export default function Home() {
   return (
     <div className={styles.scene}>
@@ -24,20 +23,20 @@ export default function Home() {
 
         <section className={styles.titleContainer}>
           <div className={permMarker.className}>
-            <motion.h1 
-            className={styles.header}
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 0.7}}
-            viewport={{amount: 0.8, once: true}}
+            <motion.h1
+              className={styles.header}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ amount: 0.8, once: true }}
             >Hi, I'm Isaac</motion.h1>
           </div>
-          <motion.h2 
-          className={styles.intro}
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 0.7, delay: 0.5}}
-            viewport={{amount: 0.8, once: true}}
+          <motion.h2
+            className={styles.intro}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            viewport={{ amount: 0.8, once: true }}
           >I am a software engineer, neuroscientist, and lifelong learner</motion.h2>
         </section>
         <hr />
@@ -66,16 +65,23 @@ export default function Home() {
         </section>
         <hr />
 
-        <motion.h2 
-            className={styles.subheader}
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 0.7}}
-            viewport={{amount: 0.8, once: true}}
-            >Core Values</motion.h2>
+        <motion.h2
+          className={styles.subheader}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ amount: 0.8, once: true }}
+        >Core Values</motion.h2>
         <CoreValues />
         <hr />
 
+        <motion.h2
+          className={styles.subheader}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ amount: 0.8, once: true }}
+        >Tech Skills</motion.h2>
         <Skills />
         <hr />
 
