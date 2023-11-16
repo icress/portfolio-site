@@ -24,9 +24,21 @@ export default function Home() {
 
         <section className={styles.titleContainer}>
           <div className={permMarker.className}>
-            <h1 className={styles.header}>Hi, I'm Isaac</h1>
+            <motion.h1 
+            className={styles.header}
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 0.7}}
+            viewport={{amount: 0.8, once: true}}
+            >Hi, I'm Isaac</motion.h1>
           </div>
-          <h2 className={styles.intro}>I am a software engineer, neuroscientist, and lifelong learner</h2>
+          <motion.h2 
+          className={styles.intro}
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 0.7, delay: 0.5}}
+            viewport={{amount: 0.8, once: true}}
+          >I am a software engineer, neuroscientist, and lifelong learner</motion.h2>
         </section>
         <hr />
 
@@ -54,7 +66,13 @@ export default function Home() {
         </section>
         <hr />
 
-        <h2 className={styles.subheader}>Core Values</h2>
+        <motion.h2 
+            className={styles.subheader}
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 0.7}}
+            viewport={{amount: 0.8, once: true}}
+            >Core Values</motion.h2>
         <CoreValues />
         <hr />
 

@@ -13,7 +13,7 @@ export default function Box({ image, front, back, gradient }) {
         <motion.div
         initial={{opacity: 0, translateY: '100px'}}
         whileInView={{opacity: 1, translateY: 0}}
-        viewport={{amount: 0.6, once: true}}
+        viewport={{amount: 0.4, once: true}}
         transition={{duration: 0.7}}>
             <motion.div
                 whileHover={{ scale: 1.1 }}

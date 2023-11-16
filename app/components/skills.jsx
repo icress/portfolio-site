@@ -7,6 +7,7 @@ import { GiSmartphone } from 'react-icons/gi';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from 'react';
 import styles from '../page.module.css';
+import { motion } from 'framer-motion';
 
 export default function Skills() {
     const iconSlide = <div className={styles.slide}>
@@ -130,7 +131,13 @@ export default function Skills() {
 
     return (
         <section>
-            <h2 className={styles.subheader}>Tech Skills</h2>
+            <motion.h2 
+            className={styles.subheader}
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 0.7}}
+            viewport={{amount: 0.8, once: true}}
+            >Tech Skills</motion.h2>
 
             {device}
 
