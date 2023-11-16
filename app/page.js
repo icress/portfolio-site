@@ -26,7 +26,7 @@ export default function Home() {
           <div className={permMarker.className}>
             <h1 className={styles.header}>Hi, I'm Isaac</h1>
           </div>
-          <h2 className={styles.disclaimer}>I am a software engineer, neuroscientist, and lifelong learner</h2>
+          <h2 className={styles.intro}>I am a software engineer, neuroscientist, and lifelong learner</h2>
         </section>
         <hr />
 

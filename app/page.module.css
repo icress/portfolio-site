@@ -35,8 +35,9 @@
   font-size: 3rem;
 }
 
-.disclaimer {
+.intro {
   text-align: center;
+  margin: 0 20px;
 }
 
 .mainButton {
@@ -190,7 +191,7 @@
   position: absolute;
   top: 20%;
   left: 3.5%;
-  height: 27.5vw;
+  height: 27.3vw;
   padding-top: 3%;
   overflow-y: scroll;
 }
@@ -216,6 +217,29 @@
   left: 5%;
   height: 64vw;
   overflow: hidden;
+}
+
+.listDiv {
+  text-align: center;
+}
+
+.skillsList {
+  list-style-type: none;
+  column-count: 3;
+  margin: auto;
+}
+
+@media (max-width: 1125px) {
+  .skillsList {
+    column-count: 2;
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+.skillItem {
+  margin: 0 10px 10px;
+  font-size: 1.5rem;
 }
 
 .card {

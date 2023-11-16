@@ -44,6 +44,24 @@ export default function Skills() {
         <h3>Postman</h3>
     </div>
 
+    const skillList = <ul className={styles.skillsList}>
+        <li className={styles.skillItem}>Python</li>
+        <li className={styles.skillItem}>Javascript</li>
+        <li className={styles.skillItem}>HTML</li>
+        <li className={styles.skillItem}>CSS</li>
+        <li className={styles.skillItem}>React</li>
+        <li className={styles.skillItem}>Flask</li>
+        <li className={styles.skillItem}>Express</li>
+        <li className={styles.skillItem}>Next</li>
+        <li className={styles.skillItem}>Node</li>
+        <li className={styles.skillItem}>MongoDB</li>
+        <li className={styles.skillItem}>SQL</li>
+        <li className={styles.skillItem}>Jest</li>
+        <li className={styles.skillItem}>Cypress</li>
+        <li className={styles.skillItem}>Three</li>
+        <li className={styles.skillItem}>Postman</li>
+    </ul>
+
     const phoneIconSlide = <div className={styles.phoneSlide}>
         <FaPython className={styles.bigIconPhone} />
         <SiJavascript className={styles.bigIconPhone} />
@@ -71,12 +89,13 @@ export default function Skills() {
                 </div>
             </div>
         </div>
-        <div className={styles.textContainer}>
-                <p>I have focused mostly on full stack web development, which has led me to be proficient in a variety of frontend and backend technologies. Whether it's a frontend library or a backend database, I can get the job done. If I don't know it yet, I have a proven track record of learning fast and accomplishing tasks.</p>
-            </div>
+        <div className={styles.listDiv}>
+            {skillList} 
+        </div>
+                       
     </>
 
-// Make laptop and screen sticky?
+    // Make laptop and screen sticky?
     const laptop = <>
         <div className={styles.skillDiv}>
             <AiOutlineLaptop className={styles.laptopIcon} />
@@ -90,8 +109,8 @@ export default function Skills() {
                     {skillTextSlide}
                 </div>
                 <div className={styles.laptopText}>
-                <p>I have focused mostly on full stack web development, which has led me to be proficient in a variety of frontend and backend technologies. Whether it's a frontend library or a backend database, I can get the job done. If I don't know it yet, I have a proven track record of learning fast and accomplishing tasks.</p>
-            </div>
+                    {skillList}
+                </div>
             </div>
         </div>
     </>
