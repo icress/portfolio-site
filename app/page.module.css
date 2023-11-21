@@ -107,13 +107,24 @@
   margin: 30px;
 }
 
+.card:hover {
+  border-image: linear-gradient(blue, lightblue) 30;
+    border-width: 4px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.card:hover h2 {
+  color: #007bff;
+}
+
 .cardContent {
   margin: 5px 0;
 }
 
-.cardLink:hover {
+/* .cardLink:hover {
   color: #007bff;
-}
+} */
 
 .cardGrid {
   display: flex;
