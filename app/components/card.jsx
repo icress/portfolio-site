@@ -4,11 +4,12 @@ import { motion } from 'framer-motion'
 
 export default function Card({ children, link }) {
     return (
-        <a href={link} target='_blank'>
-            <motion.div whileHover={{ scale: 1.1 }} className={styles.card}>
+
+        <motion.div whileHover={{ scale: 1.1 }} className={styles.card}>
+            <a href={link} target='_blank'>
                 {children}
-            </motion.div>
-        </a>
+            </a>
+        </motion.div>
 
     );
 };
