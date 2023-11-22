@@ -3,7 +3,6 @@ import CardGrid from './cardGrid';
 import styles from '../page.module.css';
 import { motion } from 'framer-motion';
 
-
 export default function Projects() {
   return (
     <section>
