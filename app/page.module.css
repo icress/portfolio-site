@@ -104,7 +104,6 @@
   padding: 10px;
   border-radius: 10px;
   max-width: 250px;
-  margin: 30px;
 }
 
 .card:hover {
@@ -116,6 +115,10 @@
 
 .card:hover h2 {
   color: #007bff;
+}
+
+.cardLink {
+  margin: 30px;
 }
 
 .cardContent {
