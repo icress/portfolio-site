@@ -31,9 +31,9 @@
 .flipBoxFront, 
 .flipBoxBack {
     position: absolute;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden !important;
     visibility: visible;
-    backface-visibility: hidden;
+    backface-visibility: hidden !important;
     background-size: cover;
     height: 100%;
     width: 100%;
