@@ -42,7 +42,12 @@
     background-position: center;
 }
 
+.flipBoxFront {
+    z-index: 1;
+}
+
 .flipBoxBack {
+    z-index: 0;
     transform: rotateY(180deg);
     display: flex;
     justify-content: center;
