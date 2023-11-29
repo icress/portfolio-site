@@ -22,7 +22,7 @@ export default function Footer() {
                 <FaGithub className={styles.icon} /> GitHub
               </a>
             </div>
-            <p>&copy; {new Date().getFullYear()} Isaac Cress</p>
+            <p className={styles.copyright}>&copy; {new Date().getFullYear()} Isaac Cress</p>
           </div>
         </footer>
       );
