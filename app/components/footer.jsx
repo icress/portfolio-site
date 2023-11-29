@@ -5,6 +5,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
           <div className={styles.footerContent}>
+            <h2 className={styles.closing}>Feel free to find me on: </h2>
             <div className={styles.footerLinks}>
               <a
                 href="https://www.linkedin.com/in/isaac-cress/"
