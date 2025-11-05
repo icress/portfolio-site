@@ -7,7 +7,7 @@ import CoreValues from './components/coreValues';
 import Skills from './components/skills';
 import Footer from './components/footer';
 import ParticleBackground from './components/particles';
-import { WorkExperience, workExperiences } from './components/workExperience';
+import WorkExperience from './components/workExperience';
 import { Permanent_Marker } from 'next/font/google';
 import { motion, MotionConfig } from 'framer-motion';
 
@@ -85,15 +85,8 @@ export default function Home() {
         <Skills />
         <hr />
 
-        {/* <div className='workContainer'>
-          {workExperiences.map((experience, index) => (
-            <WorkExperience
-              key={index}
-              companyLogo={experience.companyLogo}
-              position={experience.position}
-              info={experience.info} />
-          ))}
-        </div> */}
+        <WorkExperience />
+        <hr />
 
         <Projects />
 
