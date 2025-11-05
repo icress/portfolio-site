@@ -9,12 +9,7 @@ export default function ParticleBackground() {
         await loadSlim(engine)
     }, []) 
 
-    // const particlesLoaded = useCallback(async (container) => {
-    //     await console.log(container)
-    // })
     return (
-        <Particles init={initParticles} options={particleConfig}>
-
-        </Particles>
+        <Particles init={initParticles} options={particleConfig} />
     )
 }
