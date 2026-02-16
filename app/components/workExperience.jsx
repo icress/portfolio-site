@@ -1,30 +1,24 @@
 import styles from './work.module.css'
-import {motion, MotionConfig} from 'framer-motion'
 
-export const workExperiences = [
-    {
-      companyLogo: 'company.png',
-      position: 'Position 1',
-      info: 'Information about Position 1',
-    },
-    {
-      companyLogo: 'company_logo2.png',
-      position: 'Position 2',
-      info: 'Information about Position 2',
-    },
-    // Add more work experiences as needed
-  ];
-  
-  export function WorkExperience({ companyLogo, position, info }) {
-    return (
-      <div className={styles.work_experience}>
-        <div className={styles.company_logo}>
-          <img src={companyLogo} alt={position} />
-        </div>
+export default function WorkExperience() {
+  return (
+    <div className={styles.work_experience}>
+      <div className={styles.job_container}>
+        <img className={styles.company_logo} src='/fusawareLogo.png' />
         <div className={styles.position_info}>
-          <h2>{position}</h2>
-          <p>{info}</p>
+          <div className={styles.position_title_container}>
+            <h2><u>Software Engineer</u></h2>
+            <p className={styles.position_date}>November 2023 - Present</p>
+          </div>
+          <ul className={styles.position_description}>
+            <li>Write clean code in Typescript, Node.js, and React</li>
+            <li>Manage an evolving relational database (PostgreSQL and SQLite)</li>
+            <li>Effectively practice extreme programming, Agile, and test-driven development principles</li>
+            <li>Improve code quality by working with others through pair programming and code reviews</li>
+            <li>Utilize AWS to store data and manage app releases</li>
+          </ul>
         </div>
       </div>
-    );
-  };
+    </div>
+  )
+}

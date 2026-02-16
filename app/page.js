@@ -7,7 +7,7 @@ import CoreValues from './components/coreValues';
 import Skills from './components/skills';
 import Footer from './components/footer';
 import ParticleBackground from './components/particles';
-import { WorkExperience, workExperiences } from './components/workExperience';
+import WorkExperience from './components/workExperience';
 import { Permanent_Marker } from 'next/font/google';
 import { motion, MotionConfig } from 'framer-motion';
 
@@ -58,7 +58,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 className={styles.textContainer}
                 viewport={{ amount: .5, once: true }}>
-                <p className={styles.blurb}>I'm a motivated neuroscientist turned software engineer. My current software specialty is <b>full stack web development.</b> I love tackling interesting problems and applying creative solutions. I am an extremely driven person who is constantly striving to learn something new.</p>
+                <p className={styles.blurb}>I am a software engineer, neuroscientist, and lifelong learner. My current software specialty is <b>fullstack software engineering.</b> I love tackling interesting problems and applying creative solutions. The focus of my life is on the principles of discipline, self-motivation, and constant personal improvement.</p>
               </motion.div>
             </div>
           </MotionConfig>
@@ -85,15 +85,8 @@ export default function Home() {
         <Skills />
         <hr />
 
-        {/* <div className='workContainer'>
-          {workExperiences.map((experience, index) => (
-            <WorkExperience
-              key={index}
-              companyLogo={experience.companyLogo}
-              position={experience.position}
-              info={experience.info} />
-          ))}
-        </div> */}
+        <WorkExperience />
+        <hr />
 
         <Projects />
 
