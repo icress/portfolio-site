@@ -28,14 +28,14 @@ export default function Skills() {
 
     const skillTextSlide = <div className={styles.textSlide}>
         <h3>Python</h3>
-        <h3>JavaScript</h3>
+        <h3>Typescript</h3>
         <h3>HTML</h3>
         <h3>CSS</h3>
         <h3>React</h3>
         <h3>Flask</h3>
         <h3>Express</h3>
         <h3>Next</h3>
-        <h3>Node</h3>
+        <h3>Node.js</h3>
         <h3>MongoDB</h3>
         <h3>SQL</h3>
         <h3>Jest</h3>
