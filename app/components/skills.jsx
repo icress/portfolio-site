@@ -26,40 +26,28 @@ export default function Skills() {
         <TbBrandThreejs className={styles.bigIcon} />
     </div>
 
-    const skillTextSlide = <div className={styles.textSlide}>
-        <h3>Python</h3>
-        <h3>Typescript</h3>
-        <h3>HTML</h3>
-        <h3>CSS</h3>
-        <h3>React</h3>
-        <h3>Flask</h3>
-        <h3>Express</h3>
-        <h3>Next</h3>
-        <h3>Node.js</h3>
-        <h3>MongoDB</h3>
-        <h3>SQL</h3>
-        <h3>Jest</h3>
-        <h3>Cypress</h3>
-        <h3>Three</h3>
-        <h3>Postman</h3>
-    </div>
+    const skills = [
+        'Python',
+        'Typescript',
+        'HTML',
+        'CSS',
+        'React',
+        'Flask',
+        'Express',
+        'Next',
+        'Node.js',
+        'MongoDB',
+        'SQL',
+        'Jest',
+        'Cypress',
+        'Three',
+        'Postman'
+    ]
+
+    const skillTextSlide = <div className={styles.textSlide}>{skills.map((skill) => <h3 key={skill}>{skill}</h3>)}</div>
 
     const skillList = <ul className={styles.skillsList}>
-        <li className={styles.skillItem}>Python</li>
-        <li className={styles.skillItem}>Javascript</li>
-        <li className={styles.skillItem}>HTML</li>
-        <li className={styles.skillItem}>CSS</li>
-        <li className={styles.skillItem}>React</li>
-        <li className={styles.skillItem}>Flask</li>
-        <li className={styles.skillItem}>Express</li>
-        <li className={styles.skillItem}>Next</li>
-        <li className={styles.skillItem}>Node</li>
-        <li className={styles.skillItem}>MongoDB</li>
-        <li className={styles.skillItem}>SQL</li>
-        <li className={styles.skillItem}>Jest</li>
-        <li className={styles.skillItem}>Cypress</li>
-        <li className={styles.skillItem}>Three</li>
-        <li className={styles.skillItem}>Postman</li>
+        {skills.map((skill) => <li key={skill} className={styles.skillItem}>{skill}</li>)}
     </ul>
 
     const phoneIconSlide = <div className={styles.phoneSlide}>
