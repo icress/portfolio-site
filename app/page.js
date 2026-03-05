@@ -85,6 +85,13 @@ export default function Home() {
         <Skills />
         <hr />
 
+        <motion.h2
+          className={styles.subheader}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ amount: 0.8, once: true }}
+        >Work Experience</motion.h2>
         <WorkExperience />
         <hr />
 
