@@ -1,4 +1,4 @@
-import { SiFlask, SiJavascript, SiMongodb, SiExpress, SiPostman, SiJest, SiCypress } from 'react-icons/si';
+import { SiFlask, SiJavascript, SiMongodb, SiExpress, SiPostman, SiJest, SiCypress, SiTypescript, SiPostgresql, SiSqlite } from 'react-icons/si';
 import { FaReact, FaHtml5, FaCss3, FaPython, FaNodeJs } from 'react-icons/fa';
 import { BsFiletypeSql } from 'react-icons/bs';
 import { TbBrandThreejs } from 'react-icons/tb';
@@ -12,6 +12,7 @@ export default function Skills() {
     const iconSlide = <div className={styles.slide}>
         <FaPython className={styles.bigIcon} />
         <SiJavascript className={styles.bigIcon} />
+        <SiTypescript className={styles.bigIcon} />
         <SiFlask className={styles.bigIcon} />
         <FaReact className={styles.bigIcon} />
         <SiExpress className={styles.bigIcon} />
@@ -20,6 +21,8 @@ export default function Skills() {
         <FaCss3 className={styles.bigIcon} />
         <SiMongodb className={styles.bigIcon} />
         <BsFiletypeSql className={styles.bigIcon} />
+        <SiPostgresql className={styles.bigIcon} />
+        <SiSqlite className={styles.bigIcon} />
         <SiPostman className={styles.bigIcon} />
         <SiJest className={styles.bigIcon} />
         <SiCypress className={styles.bigIcon} />
@@ -38,6 +41,9 @@ export default function Skills() {
         'Node.js',
         'MongoDB',
         'SQL',
+        'PostgreSQL',
+        'SQLite',
+        'AWS',
         'Jest',
         'Cypress',
         'Three',
