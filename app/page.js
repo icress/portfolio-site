@@ -8,6 +8,7 @@ import Skills from './components/skills';
 import Footer from './components/footer';
 import ParticleBackground from './components/particles';
 import WorkExperience from './components/workExperience';
+import Ike from './components/ike';
 import { Permanent_Marker } from 'next/font/google';
 import { motion, MotionConfig } from 'framer-motion';
 
@@ -100,6 +101,7 @@ export default function Home() {
 
         <Footer />
       </div>
+      <Ike />
 
     </div >
   )
