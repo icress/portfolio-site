@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from agent import chat
 from pydantic import BaseModel
 from typing import List, Literal
 from ingest import ingest_data
