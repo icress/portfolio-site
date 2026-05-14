@@ -3,8 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from agent import chat
 from pydantic import BaseModel
 from typing import List, Literal
-
-
+from ingest import ingest_data
+from langchain_core.messages import AIMessage, HumanMessage
 
 class HistoryMessage(BaseModel):
     sender: Literal["user", "ai"]
@@ -15,8 +15,10 @@ class Conversation(BaseModel):
     message: str
     history: List[HistoryMessage]
 
-
+ingest_data()
 app = FastAPI()
+
+from answer import answer
 
 app.add_middleware(
     CORSMiddleware,
@@ -29,11 +31,8 @@ app.add_middleware(
 async def sendChat(conversation: Conversation):
     print(conversation)
     normalized_history = [
-        {
-            "role": "assistant" if item.sender == "ai" else "user",
-            "content": item.content,
-        }
+        AIMessage(content=item.content) if item.sender == "ai" else HumanMessage(content=item.content)
         for item in conversation.history
     ]
-    return await chat(conversation.message, normalized_history)
+    return await answer(conversation.message, normalized_history)
 

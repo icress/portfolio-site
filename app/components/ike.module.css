@@ -34,6 +34,11 @@
   font-weight: 600;
 }
 
+.chatHeader {
+  display: flex;
+  gap: 0.5rem
+}
+
 .headerTitle {
   min-width: 0;
 }
@@ -102,8 +107,21 @@
   padding: 0.5rem 0.75rem;
   border-radius: 0.9rem;
   line-height: 1.35;
-  white-space: pre-wrap;
   overflow-wrap: break-word;
+}
+
+.bubble :where(p, ul, ol, pre, blockquote) {
+  margin: 0.4rem 0;
+}
+.bubble :where(ul, ol) {
+  padding-left: 1.1rem; /* controls indent inside bubble */
+  margin-left: 0;       /* remove browser default extra offset */
+}
+.bubble li {
+  margin: 0.15rem 0;
+}
+.bubble li > p {
+  margin: 0; /* react-markdown can wrap li text in <p> */
 }
 
 .aiBubble {

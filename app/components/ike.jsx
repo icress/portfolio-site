@@ -1,17 +1,19 @@
 'use client';
 
 import { useEffect, useId, useRef, useState } from 'react';
+import { RiRobot2Line } from "react-icons/ri";
+import ReactMarkdown from 'react-markdown';
 import styles from './ike.module.css';
 
 const CHAT_API_URL = process.env.NEXT_PUBLIC_CHAT_API_URL || 'http://localhost:8000/chat';
 
 export default function Ike() {
   const panelId = useId();
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [messages, setMessages] = useState([
     {
       sender: 'ai',
-      content: 'Hi! I am Ike. Ask me anything and I will do my best to help.',
+      content: 'Hi! I am Ike. Feel free to ask me about Isaac and I will do my best to help.',
     },
   ]);
   const [input, setInput] = useState('');
@@ -107,7 +109,10 @@ export default function Ike() {
       aria-label="Chat assistant"
     >
       <div className={styles.header}>
-        <span className={styles.headerTitle}>Chat with Ike</span>
+        <div className={styles.chatHeader}>
+          <RiRobot2Line />
+          <span className={styles.headerTitle}>Chat with Ike</span>
+        </div>
         <button
           type="button"
           className={styles.collapseToggle}
@@ -148,7 +153,7 @@ export default function Ike() {
               key={`${message.sender}-${idx}`}
               className={`${styles.bubble} ${message.sender === 'user' ? styles.userBubble : styles.aiBubble}`}
             >
-              {message.content || (isLoading && idx === messages.length - 1 ? 'Thinking...' : '')}
+              <ReactMarkdown>{message.content || (isLoading && idx === messages.length - 1 ? 'Thinking...' : '')}</ReactMarkdown>
             </div>
           ))}
         </div>
