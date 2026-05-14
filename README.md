@@ -1,5 +1,7 @@
 # Portfolio site
 
+![Portfolio site preview](public/project-screenshot.png)
+
 ### Frontend
 
 - **Next.js** — App router–style React framework.
